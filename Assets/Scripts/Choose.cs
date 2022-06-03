@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Choose : MonoBehaviour
 {
     public GameObject[] characters;
-    private int characterIndex = 0;
+    private int player = 0;
+    public Text playerName;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,22 +23,29 @@ public class Choose : MonoBehaviour
 
     public void Next()
     {
-        if (characterIndex < characters.Length -1)
+        if (player < characters.Length -1)
         {
-            characters[characterIndex].SetActive(false);
-            characterIndex++;
-            characters[characterIndex].SetActive(true);
+            characters[player].SetActive(false);
+            player++;
+            characters[player].SetActive(true);
         }
     }
 
     public void Back()
     {
-        if (characterIndex > 0)
+        if (player > 0)
         {
-            characters[characterIndex].SetActive(false);
-            characterIndex--;
-            characters[characterIndex].SetActive(true);
+            characters[player].SetActive(false);
+            player--;
+            characters[player].SetActive(true);
         }
+    }
+
+    public void Accept()
+    {
+        SaveScript.playerCharacter = player;
+        SaveScript.playerName = playerName.text;
+        SceneManager.LoadScene(1);
     }
 
 }
