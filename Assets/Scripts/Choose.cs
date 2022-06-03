@@ -8,7 +8,7 @@ public class Choose : MonoBehaviour
 {
     public GameObject[] characters;
     private int player = 0;
-    public Text playerName;
+    public Text pName;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +44,7 @@ public class Choose : MonoBehaviour
     public void Accept()
     {
         SaveScript.playerCharacter = player;
-        SaveScript.playerName = playerName.text;
+        SaveScript.playerName = pName.text;
         SceneManager.LoadScene(1);
     }
 

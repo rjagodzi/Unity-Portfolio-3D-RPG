@@ -1427,7 +1427,7 @@ MonoBehaviour:
   - {fileID: 1713814889}
   - {fileID: 1970260561}
   - {fileID: 80226547}
-  playerName: {fileID: 533716450}
+  pName: {fileID: 533716450}
 --- !u!1 &1651435317
 GameObject:
   m_ObjectHideFlags: 0
