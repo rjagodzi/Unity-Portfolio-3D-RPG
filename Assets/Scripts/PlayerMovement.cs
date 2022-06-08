@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 mousePos;
     private Vector3 currentMousePos;
 
+    public static bool canMove = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,14 +48,17 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            //ScreenPointToRay is converting the Vector2 position of the mouse into
-            //Vector 3 position of the character (shoots a ray from the mouse position into the game world)
-            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            
-            if(Physics.Raycast(ray, out hit))
+            if(canMove == true)
             {
-                nav.destination = hit.point;
-            }
+                //ScreenPointToRay is converting the Vector2 position of the mouse into
+                //Vector 3 position of the character (shoots a ray from the mouse position into the game world)
+                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+                if (Physics.Raycast(ray, out hit))
+                {
+                    nav.destination = hit.point;
+                }
+            }  
         }
 
         if(velocitySpeed != 0)
