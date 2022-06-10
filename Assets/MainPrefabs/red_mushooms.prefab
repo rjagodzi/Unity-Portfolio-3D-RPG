@@ -224,6 +224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   number: 1
+  redMushroom: 1
+  blueFlower: 0
 --- !u!54 &540718478
 Rigidbody:
   m_ObjectHideFlags: 0
