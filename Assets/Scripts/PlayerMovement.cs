@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 currentMousePos;
 
     public static bool canMove = true;
+    //moveLayer is necessary for the raycast to ignore the BuildingTrigger collider
+    public LayerMask moveLayer;
 
     // Start is called before the first frame update
     void Start()
@@ -54,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
                 //Vector 3 position of the character (shoots a ray from the mouse position into the game world)
                 ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-                if (Physics.Raycast(ray, out hit))
+                if (Physics.Raycast(ray, out hit, 300, moveLayer))
                 {
                     nav.destination = hit.point;
                 }
