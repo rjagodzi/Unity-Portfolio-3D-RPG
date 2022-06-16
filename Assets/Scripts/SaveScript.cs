@@ -5,7 +5,7 @@ using UnityEngine;
 public class SaveScript : MonoBehaviour
 {
     public static int playerCharacter = 0;
-    public static string playerName = "Player";
+    public static string playerName = "player";
     // Start is called before the first frame update
     void Start()
     {
