@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 currentMousePos;
 
     public static bool canMove = true;
+    //var "moving" prevents the shopUI from dissapearing
+    public static bool moving = false;
     //moveLayer is necessary for the raycast to ignore the BuildingTrigger collider
     public LayerMask moveLayer;
 
@@ -66,11 +68,13 @@ public class PlayerMovement : MonoBehaviour
         if(velocitySpeed != 0)
         {
             anim.SetBool("sprinting", true);
+            moving = true;
         }
 
         if (velocitySpeed == 0)
         {
             anim.SetBool("sprinting", false);
+            moving = false;
         }
 
         if (Input.GetMouseButton(1))
