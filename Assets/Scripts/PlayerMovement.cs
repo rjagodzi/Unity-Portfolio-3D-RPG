@@ -26,6 +26,10 @@ public class PlayerMovement : MonoBehaviour
     //moveLayer is necessary for the raycast to ignore the BuildingTrigger collider
     public LayerMask moveLayer;
 
+    public GameObject freeCam;
+    public GameObject staticCam;
+    private bool freeCamActive = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +37,8 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         ct = playerCam.GetCinemachineComponent<CinemachineTransposer>();
         currentMousePos = ct.m_FollowOffset;
+        freeCam.SetActive(true);
+        staticCam.SetActive(false);
     }
 
     // Update is called once per frame
@@ -85,5 +91,20 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            if(freeCamActive == true)
+            {
+                freeCam.SetActive(false);
+                staticCam.SetActive(true);
+                freeCamActive = false;
+            }
+            else if (freeCamActive == false)
+            {
+                freeCam.SetActive(true);
+                staticCam.SetActive(false);
+                freeCamActive = true;
+            }
+        }
     }
 }
