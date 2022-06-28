@@ -1,21 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class SaveScript : MonoBehaviour
-{
-    public static int playerCharacter = 0;
-    public static string playerName = "player";
-    // Start is called before the first frame update
-    void Start()
-    {
-        DontDestroyOnLoad(this);
-    }
-
-    // Update is called once per frame
-    /*void Update()
-    {
-        
-    }*/
-    
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:93a70d58d2c255879e0b879b32c72d453386daf216c4651f5395027c6921ff3f
+size 439

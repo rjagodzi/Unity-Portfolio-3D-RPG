@@ -1,15 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PlayerSpawn : MonoBehaviour
-{
-    public GameObject[] characters;
-    public Transform spawnPoint;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        Instantiate(characters[SaveScript.playerCharacter], spawnPoint.position, spawnPoint.rotation);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5c2fcfe963b91b6b3fdb816af618b6d8b279248d7f7604bbb54a8680d06c3d26
+size 395

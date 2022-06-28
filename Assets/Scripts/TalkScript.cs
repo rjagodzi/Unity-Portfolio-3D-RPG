@@ -1,33 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class TalkScript : MonoBehaviour
-{
-    public GameObject messageBox;
-    public int tavernNumber = 0;
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            messageBox.SetActive(true);
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            messageBox.GetComponentInChildren<messageScript>().shopNum = tavernNumber;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            messageBox.SetActive(false);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bf5e35057cfc3fc8f28969e63b745a03ee87c026d0b15325fd52d7a6a46f9cbd
+size 753

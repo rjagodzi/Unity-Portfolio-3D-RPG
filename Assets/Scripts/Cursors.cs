@@ -1,33 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class Cursors : MonoBehaviour
-{
-    public GameObject cursorObject;
-    public Sprite cursorBasic;
-    public Sprite cursorHand;
-    public Image cursorImage;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        Cursor.visible = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        cursorObject.transform.position = Input.mousePosition;
-
-        if (Input.GetMouseButton(1))
-        {
-            cursorImage.sprite = cursorHand;
-        }
-        else
-        {
-            cursorImage.sprite = cursorBasic;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:26f64da06c05e4fc0ce3ef280fd76b8ea44ff8cd4234df589b44a2629df53a79
+size 733
