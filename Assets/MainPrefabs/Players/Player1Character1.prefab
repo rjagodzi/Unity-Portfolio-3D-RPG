@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &657533079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 657533080}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &657533080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657533079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.101, z: 0.698}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_Children: []
+  m_Father: {fileID: 7098939983705123944}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &801482904
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,7 +149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823070791}
   m_LocalRotation: {x: 0.51748365, y: -0.00000001472338, z: 0.00000000890402, w: 0.8556931}
-  m_LocalPosition: {x: 0.0066833496, y: 6.7140474, z: -4.0082397}
+  m_LocalPosition: {x: 0.0066833496, y: 6.7140465, z: -4.0082397}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 801482905}
@@ -283,7 +313,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560156148232610734}
   m_LocalRotation: {x: 0.51748365, y: 0.00000001472338, z: -0.00000000890402, w: 0.8556931}
-  m_LocalPosition: {x: 0.0066833496, y: 6.7140474, z: -4.0082397}
+  m_LocalPosition: {x: 0.0066833496, y: 6.7140465, z: -4.0082397}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1560156147753569948}
@@ -505,3 +535,4 @@ MonoBehaviour:
     m_Bits: 1
   freeCam: {fileID: 1560156148232610734}
   staticCam: {fileID: 1823070791}
+  spawnPoint: {fileID: 657533079}
