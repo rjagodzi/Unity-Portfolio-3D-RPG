@@ -191,3 +191,4 @@ MonoBehaviour:
   lifetime: 2
   enemySeeker: 0
   nonMoving: 0
+  followPlayer: 1
