@@ -4877,6 +4877,8 @@ MonoBehaviour:
   lifetime: 4
   enemySeeker: 1
   nonMoving: 0
+  followPlayer: 0
+  manaCost: 0.04
 --- !u!1 &5362560902721631562
 GameObject:
   m_ObjectHideFlags: 0

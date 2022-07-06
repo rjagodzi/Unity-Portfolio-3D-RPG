@@ -4869,7 +4869,7 @@ MonoBehaviour:
   enemySeeker: 0
   nonMoving: 0
   followPlayer: 0
-  manaCost: 0.02
+  manaCost: 0.04
 --- !u!1 &725603367634608390
 GameObject:
   m_ObjectHideFlags: 0
@@ -34122,7 +34122,7 @@ MonoBehaviour:
   enemySeeker: 0
   nonMoving: 0
   followPlayer: 0
-  manaCost: 0.02
+  manaCost: 0.04
 --- !u!1 &6414010843661808797
 GameObject:
   m_ObjectHideFlags: 0
@@ -34273,7 +34273,7 @@ MonoBehaviour:
   enemySeeker: 0
   nonMoving: 0
   followPlayer: 0
-  manaCost: 0.02
+  manaCost: 0.04
 --- !u!1 &6414010844290224310
 GameObject:
   m_ObjectHideFlags: 0
@@ -39240,7 +39240,7 @@ MonoBehaviour:
   enemySeeker: 0
   nonMoving: 0
   followPlayer: 0
-  manaCost: 0.02
+  manaCost: 0.04
 --- !u!1 &6414010844500479817
 GameObject:
   m_ObjectHideFlags: 0
@@ -48935,7 +48935,7 @@ MonoBehaviour:
   enemySeeker: 0
   nonMoving: 0
   followPlayer: 0
-  manaCost: 0.02
+  manaCost: 0.04
 --- !u!1 &6414010844573944092
 GameObject:
   m_ObjectHideFlags: 0
