@@ -161,6 +161,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 19800006, guid: c315731710b634ac1907e6aceca06447, type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800006, guid: c315731710b634ac1907e6aceca06447, type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800008, guid: c315731710b634ac1907e6aceca06447, type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800008, guid: c315731710b634ac1907e6aceca06447, type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c315731710b634ac1907e6aceca06447, type: 3}
 --- !u!1 &4626887035648314223 stripped
@@ -192,3 +208,4 @@ MonoBehaviour:
   enemySeeker: 0
   nonMoving: 0
   followPlayer: 1
+  manaCost: 0.04

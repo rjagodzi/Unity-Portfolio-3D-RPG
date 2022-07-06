@@ -191,3 +191,5 @@ MonoBehaviour:
   lifetime: 9
   enemySeeker: 1
   nonMoving: 0
+  followPlayer: 0
+  manaCost: 0.07
