@@ -4895,3 +4895,4 @@ MonoBehaviour:
   nonMoving: 0
   followPlayer: 1
   manaCost: 0.1
+  invisibility: 1
